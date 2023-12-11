@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="emp_tablestyles.css">
+  <link rel="stylesheet" href="emp_background.css">
+  <script src="emp_script.js"></script>
+  <script src="server.js"></script>
+  <title>Employee Details</title>
+</head>
+ <h class="headie">EMPLOYEE DETAILS</h>
+
+  <div class="input-container">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+    </div>
+    <div>
+      <label for="employeeID">Employee ID:</label>
+      <input type="text" id="employeeID">
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob">
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+		<option> </option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefernot">prefer not to say</option>
+      </select>
+    </div>
+    <div>
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation">
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone">
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address">
+    </div>
+    <div>
+      <label for="joiningDate">Joining Date:</label>
+      <input type="date" id="joiningDate">
+    </div>
+    <div>
+      <label for="joiningDate">Adar Number:</label>
+      <input type="text" id="AdarNumber">
+    </div>
+    <div>
+      <label for="salary">Present Salary:</label>
+      <input type="text" id="salary">
+    </div>
+    
+  </div>
+
+  <button onclick="addEmployee()">Add Employee</button>
+  <h class="headie2">TABLE</h>
+
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employee ID</th>
+        <th>Date of Birth</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Designation</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Joining Date</th>
+        <th>Adar Number</th>
+        <th>Experience</th>
+        <th>Present Salary</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+    </tbody>
+  </table>
+</body>
+</html>
